@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in** Class 2 - Models
+**Stoped in** Class Entity Framework - 2 min
 
 ## Course
 
@@ -10,6 +10,7 @@
 ## Technologies
 
 - .NET 6
+- Entity Framework
 
 ## Links
 
