@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in:** 1 - 7 min
+**Stoped in** Class 2 - Models
 
 ## Course
 
@@ -10,3 +10,7 @@
 ## Technologies
 
 - .NET 6
+
+## Links
+
+- Swagger: https://localhost:7153/swagger/index.html
