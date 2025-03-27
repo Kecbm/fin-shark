@@ -2,7 +2,7 @@
 
 **Stoped in**: Class - Entity Framework - 8 min 48 sec
 
-Ver como monta a conection string do Sql Server no appsettings.json
+docker-compose para sql server: https://renatogroffe.medium.com/sql-server-docker-compose-criando-rapidamente-ambientes-e-populando-bases-para-testes-13d108d8cdb2
 
 ## Course
 
