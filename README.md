@@ -1,8 +1,8 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - Entity Framework - 8 min 48 sec
+**Stoped in**: Class - Entity Framework - 10 min 50 sec
 
-docker-compose para sql server: https://renatogroffe.medium.com/sql-server-docker-compose-criando-rapidamente-ambientes-e-populando-bases-para-testes-13d108d8cdb2
+Error during `dotnet ef migrations add init --verbose` execution
 
 ## Course
 
@@ -14,6 +14,7 @@ docker-compose para sql server: https://renatogroffe.medium.com/sql-server-docke
 - .NET 6
 - Entity Framework
 - SQL Server
+- Docker: `docker-compose up -d`
 
 ## Links
 
