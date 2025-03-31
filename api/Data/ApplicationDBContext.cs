@@ -11,7 +11,8 @@ namespace api.Data
     {
         public ApplicationDBContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
-            
+            Stock = Set<StockModel>();
+            Comments = Set<CommentModel>();
         }
 
         public DbSet<StockModel> Stock { get; set; }
