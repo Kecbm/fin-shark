@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api.Models
 {
-    public class StockModel
+    public class Stock
     {
         public int Id { get; set; }
         public string Symbol { get; set; } = string.Empty;
@@ -17,6 +17,6 @@ namespace api.Models
         public decimal LastDividend { get; set; }
         public string Industry { get; set; } = string.Empty;
         public long MarketCap { get; set; }
-        public List<CommentModel> Comments { get; set; } = new List<CommentModel>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }
