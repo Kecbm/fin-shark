@@ -21,3 +21,7 @@
 ## Code
 
 - Migrations: `dotnet ef migrations add Init --project api -s api -c api.Data.ApplicationDbContext --verbose`
+
+## Others topics
+
+- See here others topics to implementing: https://codewithmukesh.com/courses/dotnet-webapi-zero-to-hero/
