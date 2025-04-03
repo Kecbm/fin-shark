@@ -2,8 +2,6 @@
 
 **Stoped in**: Class - Entity Framework - 10 min 50 sec
 
-Error during `dotnet ef migrations add init --verbose` execution
-
 ## Course
 
 - YouTube Playlist: https://www.youtube.com/watch?v=qBTe6uHJS_Y&list=PL82C6-O4XrHfrGOCPmKmwTO7M0avXyQKc
@@ -19,3 +17,7 @@ Error during `dotnet ef migrations add init --verbose` execution
 ## Links
 
 - Swagger: https://localhost:7153/swagger/index.html
+
+## Code
+
+- Migrations: `dotnet ef migrations add Init --project api -s api -c api.Data.ApplicationDbContext --verbose`
