@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - 
+**Stoped in**: Class - Controllers - 10 min 50 sec
 
 ## Course
 
