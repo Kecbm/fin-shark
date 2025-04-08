@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - Entity Framework - 10 min 50 sec
+**Stoped in**: Class - 
 
 ## Course
 
@@ -21,6 +21,7 @@
 ## Code
 
 - Migrations: `dotnet ef migrations add Init --project api -s api -c api.Data.ApplicationDbContext --verbose`
+- Database: `dotnet ef database update`
 
 ## Others topics
 
