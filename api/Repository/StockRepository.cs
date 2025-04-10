@@ -13,13 +13,15 @@ namespace api.Repository
     public class StockRepository : IStockRepository
     {
         private readonly ApplicationDBContext _context;
+        
         public StockRepository(ApplicationDBContext context)
         {
             _context = context;
         }
-        public Task<List<Stock>> GetAllAsync()
+
+        public async Task<List<Stock>> GetAllAsync()
         {
-            return _context.Stocks.ToListAsync();
+            return await _context.Stocks.ToListAsync();
         }
 
         public async Task<Stock?> GetByIdAsync(int id)
