@@ -20,5 +20,10 @@ namespace api.Repository
         {
             return _context.Stocks.ToListAsync();
         }
+
+        public async Task<Stock?> GetByIdAsync(int id)
+        {
+            return await _context.Stocks.FindAsync(id);
+        }
     }
 }
