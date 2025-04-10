@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - Async - await
+**Stoped in**: Class - Refactor to repository
 
 ## Course
 
