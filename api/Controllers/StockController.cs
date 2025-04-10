@@ -42,7 +42,9 @@ namespace api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
-            var stock = await _context.Stocks.FindAsync(id);
+            // var stock = await _context.Stocks.FindAsync(id);
+
+            var stock = await _stockRepository.GetByIdAsync(id);
 
             if (stock == null)
             {
