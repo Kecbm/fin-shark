@@ -73,13 +73,16 @@ namespace api.Controllers
         [Route("{id}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateStockRequestDto updateDto)
         {
-            var stockModel = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);
+            // var stockModel = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);]
+
+            var stockModel = await _stockRepository.UpdateAsync(id, updateDto);
 
             if (stockModel == null)
             {
                 return NotFound();
             }
 
+            /*
             stockModel.Symbol = updateDto.Symbol;
             stockModel.CompanyName = updateDto.CompanyName;
             stockModel.Purchase = updateDto.Purchase;
@@ -88,6 +91,7 @@ namespace api.Controllers
             stockModel.MarketCap = updateDto.MarketCap;
 
             await _context.SaveChangesAsync();
+            */
 
             return Ok(stockModel.ToStockDto());
         }
