@@ -56,5 +56,21 @@ namespace api.Repository
 
             return existingStock;
         }
+
+        public async Task<Stock?> DeleteAsync(int id)
+        {
+            var stockModel = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);
+
+            if (stockModel == null)
+            {
+                return null;
+            }
+
+            _context.Stocks.Remove(stockModel);
+
+            await _context.SaveChangesAsync();
+
+            return stockModel;
+        }
     }
 }
