@@ -6,6 +6,7 @@ using api.Data;
 using api.Interfaces;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
+using api.Dtos.Stock;
 
 namespace api.Repository
 {
@@ -25,7 +26,7 @@ namespace api.Repository
         {
             return await _context.Stocks.FindAsync(id);
         }
-        
+
         public async Task<Stock> CreateAsync(Stock stockModel)
         {
             await _context.Stocks.AddAsync(stockModel);
@@ -33,6 +34,27 @@ namespace api.Repository
             await _context.SaveChangesAsync();
 
             return stockModel;
+        }
+
+        public async Task<Stock?> UpdateAsync(int id, UpdateStockRequestDto stockDto)
+        {
+            var existingStock = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);
+
+            if (existingStock == null)
+            {
+                return null;
+            }
+
+            existingStock.Symbol = stockDto.Symbol;
+            existingStock.CompanyName = stockDto.CompanyName;
+            existingStock.Purchase = stockDto.Purchase;
+            existingStock.LastDividend = stockDto.LastDividend;
+            existingStock.Industry = stockDto.Industry;
+            existingStock.MarketCap = stockDto.MarketCap;
+
+            await _context.SaveChangesAsync();
+
+            return existingStock;
         }
     }
 }
