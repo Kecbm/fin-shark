@@ -78,9 +78,9 @@ namespace api.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == id);
+            var stockModel = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);
 
             if (stockModel == null)
             {
@@ -89,7 +89,7 @@ namespace api.Controllers
 
             _context.Stocks.Remove(stockModel);
             
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
