@@ -25,5 +25,14 @@ namespace api.Repository
         {
             return await _context.Stocks.FindAsync(id);
         }
+        
+        public async Task<Stock> CreateAsync(Stock stockModel)
+        {
+            await _context.Stocks.AddAsync(stockModel);
+
+            await _context.SaveChangesAsync();
+
+            return stockModel;
+        }
     }
 }
