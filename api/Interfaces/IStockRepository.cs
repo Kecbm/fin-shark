@@ -10,5 +10,6 @@ namespace api.Interfaces
     {
         Task<List<Stock>> GetAllAsync();
         Task<Stock?> GetByIdAsync(int id);
+        Task<Stock> CreateAsync(Stock stockModel);
     }
 }
