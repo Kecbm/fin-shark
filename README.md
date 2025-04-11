@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - Comment system
+**Stoped in**: Class - 13. Comment GET + Include()
 
 ## Course
 
