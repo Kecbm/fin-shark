@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - 13. Comment GET + Include()
+**Stoped in**: Class - 14. 1-To-Many CREATE - 3 min
 
 ## Course
 
@@ -13,6 +13,7 @@
 - Entity Framework
 - SQL Server
 - Docker: `docker-compose up -d`
+- NewtonsoftJson
 
 ## Links
 
