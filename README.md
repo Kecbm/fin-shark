@@ -1,6 +1,6 @@
 # API developed during the ASP.NET Core Web API .NET - Teddy Smith Course
 
-**Stoped in**: Class - 14. 1-To-Many CREATE - 3 min
+**Stoped in**: Class - 15. Comment UPDATE
 
 ## Course
 
