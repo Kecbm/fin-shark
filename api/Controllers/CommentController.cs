@@ -13,6 +13,8 @@ namespace api.Controllers
 {
     [Route("api/comment")]
     [ApiController]
+    // For ignore the controller routes in the Swagger
+    // [ApiExplorerSettings(IgnoreApi = true)]
     public class CommentController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
