@@ -31,7 +31,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    // This option remove schema topic on swagger
+    app.UseSwaggerUI(options =>
+     {
+         options.DefaultModelsExpandDepth(-1);
+     });
 }
 
 app.UseHttpsRedirection();
